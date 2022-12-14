@@ -1,0 +1,138 @@
+/* Custom properties */
+:root {
+    --color-blue: #c3e1ef;
+    --color-white: #ffffff;
+    --color-blue-dark: #120945;
+    --color-yellow: #f2ad41;
+    --color-pink: #de7eb6;
+    --font: "Livvic", sans-serif;
+}
+
+/* CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Generic rules */
+html {
+    background-color: var(--color-blue);
+    line-height: 1;
+    color: var(--color-white);
+}
+
+/* Tree */
+.container {
+    width: 350px;
+    margin: 32px auto 0 auto;
+}
+
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+    color: var(--color-pink);
+}
+
+img {
+    max-width: 100%;
+}
+
+.xmas-stage {
+    position: relative;
+    height: 600px;
+}
+
+/* Panel */
+.ball {
+    width: 65px;
+    position: absolute;
+    transition: scale 0.4s ease-in-out;
+}
+
+.ball:hover {
+    transform: scale(1.2);
+}
+
+.ball_1 {
+    top: 240px;
+    left: 85px;
+}
+
+.ball_2 {
+    top: 170px;
+    left: 116px;
+}
+
+.ball_3 {
+    top: 150px;
+    right: 120px;
+}
+
+.ball_4 {
+    top: 240px;
+    right: 74px;
+}
+
+.ball_5 {
+    top: 300px;
+    left: 145px;
+}
+
+.gift {
+    position: absolute;
+}
+
+.gift_1 {
+    bottom: 139px;
+    width: 120px;
+    right: 36px;
+}
+
+.gift_2 {
+    bottom: 139px;
+    left: 36px;
+    width: 120px;
+}
+
+.gift_3 {
+    bottom: 200px;
+    left: 68px;
+    width: 60px;
+}
+
+.panel {
+    display: grid;
+    grid-auto-rows: 1fr 1fr;
+    place-items: center;
+
+    background-color: var(--color-blue-dark);
+    margin: 40px 0;
+    width: 100%;
+    padding: 16px 0;
+
+    text-align: center;
+    border-radius: 8px;
+}
+
+.counter {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+}
+
+.counter-block {
+    font-weight: 600;
+}
+
+.counter-block:last-child {
+    color: var(--color-yellow);
+}
+
+.counter-block-number {
+    font-size: 48px;
+}
+
+.counter-block-label {
+    font-size: 20px;
+}
